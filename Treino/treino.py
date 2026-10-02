@@ -6,7 +6,6 @@ class Treino:
         self.__distancia = distancia
         self.__tempo = tempo
 
-    # Getters
 
     def getId(self):
         return self.__id
@@ -20,8 +19,6 @@ class Treino:
     def getTempo(self):
         return self.__tempo
 
-    # Setters
-
     def setId(self, id):
         self.__id = id
 
@@ -34,16 +31,12 @@ class Treino:
     def setTempo(self, tempo):
         self.__tempo = tempo
 
-    # Calcula o pace
-
     def Pace(self):
 
         if self.__distancia <= 0:
             return 0
 
         return self.__tempo / self.__distancia
-
-    # Mostra os dados do treino
 
     def __str__(self):
 
